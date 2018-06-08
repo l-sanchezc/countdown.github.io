@@ -1,33 +1,34 @@
-<!-- Display the countdown timer in an element -->
-<p id="demo"></p>
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Sep 5, 2018 15:37:25").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
+<body>
+  <main>
+    <div class="home-welcome">
+<div class="container">
+<div class="pure-g-r">
+<div class="pure-u-1-2">
+  <div class="main-example">
+    <p>
+      Next year begins in:
+    </p>
+    <div class="countdown-container" id="main-example"></div>
+  </div>
+</div>
+</div>
+</div>
+<script type="text/template" id="main-example-template">
+  <div class="time <%= label %>">
+    <span class="count curr top"><%= curr %></span>
+    <span class="count next top"><%= next %></span>
+    <span class="count next bottom"><%= next %></span>
+    <span class="count curr bottom"><%= curr %></span>
+    <span class="label"><%= label.length < 6 ? label : label.substr(0, 3)  %></span>
+  </div>
 </script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/jquery.countdown/dist/jquery.countdown.js"></script>
+<script src="app.js"></script>
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+</div>
+</main>
+</body>

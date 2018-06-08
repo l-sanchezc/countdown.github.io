@@ -1,0 +1,22 @@
+{
+  "name": "countdown.github.io",
+  "homepage": "https://github.com/lsanchezc/countdown.github.io",
+  "authors": [
+    "Lazaro Sanchez <laza.sanchez@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery.countdown": "^2.2.0",
+    "jquery": "^3.3.1",
+    "underscore": "^1.9.1"
+  }
+}
