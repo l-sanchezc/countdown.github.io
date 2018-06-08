@@ -11,6 +11,13 @@ body {
   font-weight: 300;
   line-height: 1.4em;
 }
+
+canvas {
+  background-image: url(navypier.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
 pre {
   background-color: #f8f8f8;
   border: 1px solid #ddd;
