@@ -1,6 +1,6 @@
 $(window).on('load', function() {
     var labels = ['weeks', 'days', 'hours', 'minutes', 'seconds'],
-      nextYear = '2018/08/01',
+      nextYear = '2018/10/11',
       template = _.template($('#main-example-template').html()),
       currDate = '00:00:00:00:00',
       nextDate = '00:00:00:00:00',
