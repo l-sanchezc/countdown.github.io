@@ -45,6 +45,8 @@ code {
   max-width: 1170px;
   margin: 0 auto;
   padding: 1em 2em;
+  opacity: 0.7;
+  background: #ffff;
 }
 i {
   margin-right: 5px;
