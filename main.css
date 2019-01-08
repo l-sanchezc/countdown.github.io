@@ -373,11 +373,7 @@ footer a:visited:hover {
  * Home module
  */
 .home-welcome {
-  background-image: linear-gradient(45deg, #361752, #B31B67);
-  background-image: -webkit-linear-gradient(45deg, #361752, #B31B67);
-  background-image: -moz-linear-gradient(45deg, #361752, #B31B67);
-  background-image: -ms-linear-gradient(45deg, #361752, #B31B67);
-  background-image: -o-linear-gradient(45deg, #361752, #B31B67);
+  background-image: url(roscon_reyes0.jpg);
   color: white;
   padding: 2em 0 2em;
   font-size: 125%;
